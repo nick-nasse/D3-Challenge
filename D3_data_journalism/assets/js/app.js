@@ -20,7 +20,7 @@ var chartgroup = svg.append("g")
   .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
 // load csv
-d3.csv("/assets/data/data.csv").then(function(hdata) {
+d3.csv("assets/data/data.csv").then(function(hdata) {
     hdata.forEach(function(data) {
     data.poverty = +data.poverty;
     data.obesity = +data.obesity;
